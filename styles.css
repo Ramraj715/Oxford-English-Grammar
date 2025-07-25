@@ -394,35 +394,154 @@ body {
     margin-top: 3rem;
 }
 
+/* Grammar Tables Styles */
+.grammar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.grammar-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.grammar-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+.grammar-table tr:nth-child(even) {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.grammar-table tr:hover {
+    background: linear-gradient(135deg, #e0f2fe 0%, #e1f5fe 100%);
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+.grammar-table .formula {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #92400e;
+}
+
+.grammar-table .example {
+    font-style: italic;
+    color: #059669;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    padding: 0.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #10b981;
+}
+
+/* Tense Table Specific */
+.tense-table th {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+/* Voice Table Specific */
+.voice-table th {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* Narration Tables Specific */
+.narration-table th {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.person-change-table th {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.tense-change-table th {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.adverbial-change-table th {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.punctuation-change-table th {
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+}
+
+/* Table Container */
+.table-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.table-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
         gap: 1rem;
     }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .feature-grid,
-    .topic-grid,
-    .reference-grid {
-        grid-template-columns: 1fr;
-    }
-
+    
     .nav {
         justify-content: center;
     }
-
-    .exercise-selector {
-        text-align: left;
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
     }
-
-    .exercise-btn {
-        display: block;
-        width: 100%;
-        margin: 0.5rem 0;
+    
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reference-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .grammar-table {
+        font-size: 0.85rem;
+    }
+    
+    .grammar-table th,
+    .grammar-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .table-container {
+        padding: 1rem;
     }
 }
 
